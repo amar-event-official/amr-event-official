@@ -53,6 +53,66 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      /* Ensure the About and Vision sections have uniform indentation, text justification, and beautify fonts */
+
+      .about p,
+      .content p {
+        text-align: justify;
+        /* Justifies text */
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: "Roboto", sans-serif;
+        /* Applies a clean, modern font */
+        font-size: 1.1rem;
+        /* Sets the font size to a readable value */
+        line-height: 1.6;
+        /* Adds space between lines for better readability */
+      }
+
+      .about h3,
+      .content h4 {
+        text-align: left;
+        font-size: 1.5rem;
+        font-family: "Raleway", sans-serif;
+        /* Elegant, clean font for headers */
+        margin-bottom: 10px;
+      }
+
+      .content h4 {
+        margin-top: 20px;
+      }
+
+      .about h3 {
+        font-weight: 600;
+        color: #333;
+        /* Dark color for headers */
+      }
+
+      .content h4 {
+        font-weight: 500;
+        color: #555;
+        /* Lighter color for sub-headers */
+      }
+      /* Adjust margins for the sections */
+
+      .about,
+      .content {
+        padding: 40px 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      /* Optional: Add space between paragraphs */
+
+      .about p + p,
+      .content p + p {
+        margin-top: 20px;
+      }
+    </style>
   </head>
 
   <body class="index-page" lang="en">
@@ -99,7 +159,7 @@
             class="cta-btn"
             data-aos="fade-up"
             data-aos-delay="300"
-            >Explore Our Services</a
+            >Explore Our Solution</a
           >
         </div>
       </section>
@@ -284,7 +344,9 @@
                   >
                     <i class="bi bi-geo-alt"></i>
                     <h3>Address</h3>
-                    <p>Bashundhara, Dhaka, Bangladesh</p>
+                    <p>
+                      Block M, Bashundhara Residential Area, , Dhaka, Bangladesh
+                    </p>
                   </div>
                 </div>
 
