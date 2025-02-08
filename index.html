@@ -24,8 +24,8 @@
     <meta property="og:url" content="https://www.amarevent.com" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/favicon.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -174,6 +174,26 @@
           padding: 10px 20px;
         }
       }
+      /* Style for the logo */
+
+      .logo-img {
+        width: 50px;
+        /* Set the width of your logo */
+        height: auto;
+        /* Maintain the aspect ratio */
+        margin-right: 10px;
+        /* Space between logo and text */
+      }
+      /* Style for the "Amar Event" text */
+
+      .sitename {
+        font-size: 24px;
+        /* Adjust font size */
+        font-weight: bold;
+        /* Bold text */
+        color: #333;
+        /* Adjust text color */
+      }
     </style>
   </head>
 
@@ -183,6 +203,13 @@
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Logo Image on the Left -->
+          <img
+            src="/assets/img/logo.png"
+            alt="Amar Event Logo"
+            class="logo-img"
+          />
+          <!-- "Amar Event" Text on the Right of the Logo -->
           <h1 class="sitename">Amar Event</h1>
         </a>
 
@@ -201,8 +228,9 @@
           class="cta-btn"
           href="javascript:void(0);"
           onclick="document.getElementById('mvpModal').style.display='block';"
-          >Get Started</a
         >
+          Get Started
+        </a>
       </div>
     </header>
 
